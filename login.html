@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+        function onGoogleSignIn(googleUser) {
+            const profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId());
+            console.log('Name: ' + profile.getName());
+            console.log('Email: ' + profile.getEmail());
+
+            // Lakukan tindakan tambahan, seperti menyimpan token, mengalihkan halaman, dll.
+        }
+
+        function initiateGoogleSignIn() {
+            gapi.load('auth2', function () {
+                gapi.auth2.init().signIn().then(onGoogleSignIn);
+            });
+        }
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: 'YOUR_FACEBOOK_APP_ID',
+                cookie: true,
+                xfbml: true,
+                version: 'v13.0'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .login-container {
+            background-color: #faf9f6;
+            padding: 30px;
+            width: 390px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            font-size: 1.5em;
+            margin-bottom: 8px;
+        }
+
+        .login-container p {
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            text-align: left;
+            font-size: 0.9em;
+            margin: 10px 0 5px;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        .password-container input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            background-color: #e0e0e0;
+            height: 40px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #e78a42;
+        }
+
+        .password-container {
+            position: relative;
+            height: 40px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            line-height: 40px;
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85em;
+        }
+
+        .remember-forgot a {
+            color: #e78a42;
+            text-decoration: none;
+        }
+
+        .login-button {
+            background-color: #fb6816;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 15px;
+        }
+
+        .separator {
+            font-size: 0.9em;
+            color: #777;
+            margin: 20px 0;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+        }
+
+        .google {
+            color: #db4437;
+            width: 45px;
+            margin: -10px -8px 0 9px;
+        }
+
+        .facebook {
+            color: #3b5998;
+            width: 70px;
+            height: 36px;
+            margin: -5px -5px 0 0;
+        }
+
+        .register {
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+
+        .register a {
+            color: #e78a42;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Selamat Datang</h2>
+        <p>Masuk ke akun Anda!</p>
+        <form action="#">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Masukan email Anda" required>
+
+            <label for="password">Kata sandi</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Masukan kata sandi Anda" required>
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Ingatkan saya</label>
+                <a href="#">Lupa kata sandi?</a>
+            </div>
+            <button type="button" class="login-button" onclick="window.location.href='homepage.html'">Masuk
+                Sekarang</button>
+
+        </form>
+
+        <div class="separator">Masuk dengan</div>
+        <div class="social-login">
+            <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" class="google"
+                onclick="initiateGoogleSignIn()" alt="Login with Google">
+            <img src="https://banner2.cleanpng.com/20180706/hpz/aax76xlah.webp" class="facebook"
+                onclick="facebookLogin()" alt="Login with Facebook">
+        </div>
+        <p class="register">Belum memiliki Akun? <a href="daftar.html">Daftar</a></p>
+    </div>
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            const toggleIcon = document.querySelector(".toggle-password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleIcon.textContent = "🙈"; // Ikon mata tercoret
+            } else {
+                passwordInput.type = "password";
+                toggleIcon.textContent = "👁️"; // Ikon mata biasa
+            }
+        }
+        function facebookLogin() {
+            FB.login(function (response) {
+                if (response.status === 'connected') {
+                    FB.api('/me', { fields: 'name, email' }, function (profile) {
+                        console.log('Name: ' + profile.name);
+                        console.log('Email: ' + profile.email);
+
+                        // Lakukan tindakan tambahan seperti menyimpan token atau redirect
+                    });
+                } else {
+                    console.log('User cancelled login or did not fully authorize.');
+                }
+            }, { scope: 'public_profile,email' });
+        }
+    </script>
+</body>
+
+</html>
