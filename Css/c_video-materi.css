@@ -1,0 +1,1484 @@
+/* Reset margin dan padding */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.c_video-materi-frame {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: ivory;
+}
+.c_video-materi-frame01 {
+  display: flex;
+  justify-content: center; /* Mengatur konten ke tengah secara horizontal */
+  align-items: center; /* Mengatur konten ke tengah secara vertikal */
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 32px 29px;
+  margin: 31px 150px;
+  gap: 32px;
+  border-radius: 20px;
+  background: var(--Secondary-Orange-Orange-100, #FB6816);
+  /* Shadow/M */
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
+}
+.c_video-materi-frame02 {
+  max-width: 1200px; /* Tambahkan batas maksimal jika diperlukan */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto; /* Memusatkan konten secara horizontal */
+  width: 784px;
+  height: 441px;
+  padding: 15px;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--Neutral-White, #FFFFF0);
+  /* Shadow/M */
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
+}
+.c_video-materi-frame03,
+.c_video-materi-frame04,
+.c_video-materi-instance {
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame03 {
+  gap: 129px;
+  display: flex;
+  position: relative;
+  max-width: 754px;
+  align-items: center;
+}
+
+.c_video-materi-frame04,
+.c_video-materi-instance {
+  max-width: 70px;
+  align-items: flex-start;
+}
+
+.c_video-materi-frame04 {
+  gap: 9px;
+  display: flex;
+  position: relative;
+  max-width: 754px;
+}
+
+.custom-horizontal-line {
+  width: 100%;        /* Mengisi lebar container */
+  max-width: 900px;   /* Atur lebar maksimal agar tidak terlalu panjang */
+  height: 1.5px;      /* Ketebalan garis */
+  background-color: #000; /* Warna garis (sesuaikan dengan keinginan Anda) */
+  margin: 0 auto;     /* Membuatnya berada di tengah */
+}
+
+
+.c_video-materi-frame05,
+.c_video-materi-frame06 {
+  gap: 500px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 754px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c_video-materi-frame06 {
+  gap: 8px;
+  max-width: 152px;
+  justify-content: flex-start;
+}
+
+.c_video-materi-instance01,
+.c_video-materi-instance02,
+.c_video-materi-instance03,
+.c_video-materi-instance04 {
+  width: 100%;
+  overflow: hidden;
+  max-width: 32px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame07 {
+  gap: 18px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 82px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame08,
+.c_video-materi-instance05,
+.c_video-materi-instance06 {
+  width: 100%;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_video-materi-instance05,
+.c_video-materi-instance06 {
+  overflow: hidden;
+  max-width: 32px;
+}
+
+.c_video-materi-frame08 {
+  gap: 32px;
+  display: flex;
+  position: relative;
+  max-width: 263px;
+  margin-top: -130px;
+}
+
+.c_video-materi-frame09,
+.c_video-materi-instance07 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.c_video-materi-instance07 {
+  gap: 10px;
+  padding: 20px;
+  max-width: 263px;
+  height: 78px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.3),0 4px 8px 3px rgba(0,0,0,.15);
+  border-radius: 10px 10px 10px 10px;
+  background-color: ivory;
+}
+
+.c_video-materi-frame09 {
+  gap: 50px;
+  max-width: 197px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Mengatur jarak antar elemen */
+}
+
+.c_video-materi-text {
+  width: 100%;
+  max-width: auto;
+  min-height: auto;
+}
+
+.c_video-materi-text,
+.c_video-materi-text01,
+.c_video-materi-text02 {
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text02 {
+  display: flex;
+  width: 197px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.c_video-materi-text03 {
+  color: var(--Neutral-Black, #121212);
+  /* Sub-Heading/16 */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.2; /* 118.75% */
+  letter-spacing: -0.08px;
+  flex: 1 0 0;
+  max-width: 200px;
+  flex-grow: 1;
+  white-space: normal; /* Mengizinkan teks memanjang jadi dua baris */
+}
+
+.c_video-materi-instance08 {
+  width: 100%;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0; /* Agar angka tidak mengecil atau bertumpuk */
+}
+.c_video-materi-number {
+  font-size: 20px;
+  font-weight: bold;
+  flex-shrink: 0; /* Mengunci ukuran angka agar tidak menyusut */
+  margin-right: 5px;
+}
+.c_video-materi-frame10,
+.c_video-materi-instance09 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.c_video-materi-instance09 {
+  gap: 10px;
+  padding: 20px;
+  max-width: 263px;
+  height: 97px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.3),0 4px 8px 3px rgba(0,0,0,.15);
+  border-radius: 10px 10px 10px 10px;
+  background-color: ivory;
+}
+
+.c_video-materi-frame10 {
+  gap: 50px;
+  max-width: 197px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Mengatur jarak antar elemen */
+}
+
+.c_video-materi-text04 {
+  display: flex;
+  width: 197px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.c_video-materi-text04,
+.c_video-materi-text05,
+.c_video-materi-text06 {
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text06 {
+  display: flex;
+  width: 197px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.c_video-materi-text07 {
+  color: var(--Neutral-Black, #121212);
+  /* Sub-Heading/16 */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.2; /* 118.75% */
+  letter-spacing: -0.08px;
+  flex: 1 0 0;
+  max-width: 200px;
+  flex-grow: 1;
+  white-space: normal; /* Mengizinkan teks memanjang jadi dua baris */
+}
+
+.c_video-materi-instance10 {
+  width: 100%;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0; /* Agar angka tidak mengecil atau bertumpuk */
+}
+
+.c_video-materi-frame11,
+.c_video-materi-instance11 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.c_video-materi-instance11 {
+  gap: 10px;
+  padding: 20px;
+  max-width: 263px;
+  height: 97px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.3),0 4px 8px 3px rgba(0,0,0,.15);
+  border-radius: 10px 10px 10px 10px;
+  background-color: ivory;
+}
+
+.c_video-materi-frame11 {
+  gap: 50px;
+  max-width: 197px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Mengatur jarak antar elemen */
+}
+
+.c_video-materi-text08 {
+  width: 100%;
+  max-width: auto;
+  min-height: auto;
+}
+
+.c_video-materi-text08,
+.c_video-materi-text09,
+.c_video-materi-text10 {
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text10 {
+  display: flex;
+  width: 197px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.c_video-materi-text11 {
+  color: var(--Neutral-Black, #121212);
+  /* Sub-Heading/16 */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.2; /* 118.75% */
+  letter-spacing: -0.08px;
+  flex: 1 0 0;
+  max-width: 200px;
+  flex-grow: 1;
+  white-space: normal; /* Mengizinkan teks memanjang jadi dua baris */
+}
+
+.c_video-materi-frame12,
+.c_video-materi-instance12 {
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.c_video-materi-instance12 {
+  width: 100%;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0; /* Agar angka tidak mengecil atau bertumpuk */
+
+}
+
+.c_video-materi-frame12 {
+  display: flex;
+  flex-wrap: wrap; /* Membuat elemen dapat turun ke baris berikutnya jika terlalu panjang */
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  align-items: center; /* Memusatkan konten secara vertikal */
+  gap: 30px; /* Menambahkan jarak antar elemen jika diperlukan */
+  width: 100%; /* Memastikan lebar penuh */
+  box-sizing: border-box;
+  margin: auto; /* Memusatkan elemen di tengah layar */
+  padding: 20px; /* Tambahkan padding jika ingin ruang tambahan di sekitar konten */
+  margin-bottom: 59px;
+}
+
+.c_video-materi-frame13,
+.c_video-materi-instance13 {
+  width: 100%;
+  max-width: 263px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-frame13 {
+  gap: 16px;
+  display: flex;
+  padding: 0 20px 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3),0 8px 12px 6px rgba(0,0,0,.15);
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #4c37ee;
+}
+
+.c_video-materi-rectangle {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 263px;
+  border-radius: 10px 10px 0 0;
+}
+
+.c_video-materi-frame14 {
+  gap: 16px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame14,
+.c_video-materi-frame15 {
+  width: 100%;
+  max-width: 223px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text12 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text13 {
+  color: ivory;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_video-materi-frame16,
+.c_video-materi-frame17 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame16 {
+  gap: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.c_video-materi-frame17 {
+  gap: 11px;
+  align-items: center;
+}
+
+.c_video-materi-instance14 {
+  width: 100%;
+  max-width: 19px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text14 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text15 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame18,
+.c_video-materi-instance15 {
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame18 {
+  gap: 11px;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  align-items: center;
+}
+
+.c_video-materi-instance15 {
+  overflow: hidden;
+  max-width: 19px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.c_video-materi-text16 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text17 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame19 {
+  gap: 11px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_video-materi-instance16 {
+  width: 100%;
+  max-width: none; /* Menghilangkan batas lebar maksimum */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4c37ee;
+  padding: 10px 0; /* Sesuaikan padding jika diperlukan */
+}
+
+.c_video-materi-text18 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text19 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame20,
+.c_video-materi-instance17 {
+  width: 100%;
+  max-width: 263px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-frame20 {
+  gap: 16px;
+  display: flex;
+  padding: 0 20px 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3),0 8px 12px 6px rgba(0,0,0,.15);
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #4c37ee;
+}
+
+.c_video-materi-rectangle1 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 263px;
+  border-radius: 10px 10px 0 0;
+}
+
+.c_video-materi-frame21 {
+  gap: 16px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame21,
+.c_video-materi-frame22 {
+  width: 100%;
+  max-width: 223px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text20 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text21 {
+  color: ivory;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_video-materi-frame23,
+.c_video-materi-frame24 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame23 {
+  gap: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.c_video-materi-frame24 {
+  gap: 11px;
+  align-items: center;
+}
+
+.c_video-materi-instance18 {
+  width: 100%;
+  max-width: 19px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text22 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text23 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame25,
+.c_video-materi-instance19 {
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame25 {
+  gap: 11px;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  align-items: center;
+}
+
+.c_video-materi-instance19 {
+  overflow: hidden;
+  max-width: 19px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.c_video-materi-text24 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text25 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame26 {
+  gap: 11px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_video-materi-instance20 {
+  width: 100%;
+  max-width: 19px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text26 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text27 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame27,
+.c_video-materi-instance21 {
+  width: 100%;
+  max-width: 263px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-frame27 {
+  gap: 16px;
+  display: flex;
+  padding: 0 20px 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3),0 8px 12px 6px rgba(0,0,0,.15);
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #4c37ee;
+}
+
+.c_video-materi-rectangle2 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 263px;
+  border-radius: 10px 10px 0 0;
+}
+
+.c_video-materi-frame28 {
+  gap: 16px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame28,
+.c_video-materi-frame29 {
+  width: 100%;
+  max-width: 223px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text28 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text29 {
+  color: ivory;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_video-materi-frame30,
+.c_video-materi-frame31 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame30 {
+  gap: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.c_video-materi-frame31 {
+  gap: 11px;
+  align-items: center;
+}
+
+.c_video-materi-instance22 {
+  width: 100%;
+  max-width: 19px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text30 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text31 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame32 {
+  gap: 11px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_video-materi-instance23 {
+  width: 100%;
+  max-width: 19px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text32 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text33 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame33 {
+  gap: 11px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_video-materi-instance24 {
+  width: 100%;
+  max-width: 19px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text34 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text35 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame34,
+.c_video-materi-instance25 {
+  width: 100%;
+  max-width: 263px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-frame34 {
+  gap: 16px;
+  display: flex;
+  padding: 0 20px 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3),0 8px 12px 6px rgba(0,0,0,.15);
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #4c37ee;
+}
+
+.c_video-materi-rectangle3 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 263px;
+  border-radius: 10px 10px 0 0;
+}
+
+.c_video-materi-frame35 {
+  gap: 16px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame35,
+.c_video-materi-frame36 {
+  width: 100%;
+  max-width: 223px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text36 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text37 {
+  color: ivory;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+
+  display: -webkit-box; /* Mengatur container teks menjadi kotak fleksibel */
+  -webkit-line-clamp: 2; /* Menentukan jumlah maksimal baris */
+  -webkit-box-orient: vertical; /* Mengatur orientasi kotak ke arah vertikal */
+  overflow: hidden; /* Memotong teks yang melebihi batas */
+  text-overflow: ellipsis; /* Menambahkan titik-titik pada teks yang terpotong */
+}
+
+.c_video-materi-frame37,
+.c_video-materi-frame38 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame37 {
+  gap: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.c_video-materi-frame38 {
+  gap: 11px;
+  align-items: center;
+}
+
+.c_video-materi-instance26 {
+  width: 100%;
+  max-width: 19px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text38 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text39 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame39 {
+  gap: 11px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_video-materi-instance27 {
+  width: 100%;
+  max-width: 19px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text40 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text41 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame40 {
+  gap: 11px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 223px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_video-materi-instance28 {
+  width: 100%;
+  max-width: 19px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text42 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text43 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-text44 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 150px;
+}
+
+.c_video-materi-text45 {
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-text46 {
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 150px;
+  width: 1140px;
+  height: 43px;
+  flex-shrink: 0;
+}
+
+.c_video-materi-text47 {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-frame41,
+.c_video-materi-frame42 {
+  gap: 14px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_video-materi-frame41 {
+  max-width: none; /* Hilangkan batas maksimum */
+}
+
+
+.c_video-materi-frame42 {
+  max-width: 424px;
+}
+
+.custom-line {
+  width: 100%; /* Akan memenuhi lebar kontainer */
+  height: 3px; /* Tinggi garis */
+  background-color: #000; /* Warna garis, bisa disesuaikan */
+  max-width: 200px; /* Batas lebar maksimum, sesuaikan sesuai kebutuhan */
+  margin: 0 auto; /* Untuk membuatnya berada di tengah */
+}
+
+
+.c_video-materi-frame43 {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  padding: 0 10px;
+  position: relative;
+  max-width: 272px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_video-materi-text48 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center; /* Mengatur agar teks sejajar secara vertikal di tengah */
+  justify-content: center;
+  white-space: nowrap; 
+}
+
+.c_video-materi-text49 {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: center;
+  margin-left: 70px;
+}
+
+.c_video-materi-vector2 {
+  position: relative;
+  left: 40px; /* Geser sedikit ke kanan */
+  width: calc(100% + 50px);
+  height: 3px; /* Sesuaikan dengan tinggi yang diinginkan */
+  background-color: #000; /* Ganti warna sesuai kebutuhan */
+  max-width: 1010px; /* Panjang maksimum garis */
+  margin: 0 auto; /* Membuat garis berada di tengah */
+}
+
+.c_video-materi-instance29 {
+  gap: 232px;
+  padding: 10px 150px;
+  width: 100%;
+  max-width: none; /* Menghilangkan batas lebar maksimum */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4c37ee; /* Sesuaikan dengan warna navbar */
+}
+
+.c_video-materi-rectangle4 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 177px;
+}
+
+.c_video-materi-frame44,
+.c_video-materi-instance30 {
+  width: 100%;
+  max-width: 302px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-frame44 {
+  gap: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_video-materi-instance31 {
+  width: 100%;
+  max-width: 79px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text50 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text51 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 600;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-instance32 {
+  width: 100%;
+  max-width: 85px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text52 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text53 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 600;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-instance33 {
+  width: 100%;
+  max-width: 98px;
+  box-sizing: border-box;
+}
+
+.c_video-materi-text54 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_video-materi-text55 {
+  color: ivory;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Plus Jakarta Sans",sans-serif;
+  font-weight: 600;
+  line-height: 19px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_video-materi-instance34 {
+  width: 100%;
+  max-width: 36px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi OTP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(/assets/Background.svg);
+            background-size: cover;
+        }
+
+        .otp-modal {
+            background-color: #fffff0;
+            padding: 24px;
+            width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        .otp-modal h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .otp-modal p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+            margin-bottom: 20px;
+        }
+
+        .otp-inputs {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .otp-inputs input {
+            width: 45px;
+            height: 45px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .otp-modal button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #ff7a00;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .otp-modal button:hover {
+            background-color: #e06600;
+        }
+
+        .otp-resend {
+            font-size: 12px;
+            color: #666;
+            margin-top: 15px;
+        }
+
+        .otp-resend a {
+            color: #333;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="otp-modal">
+        <span class="close-button">&times;</span>
+        <h2>Verifikasi OTP</h2>
+        <p>Ketik kode verifikasi yang telah dikirim ke alamat email Anda</p>
+        <div class="otp-inputs">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+        <button>Kirim</button>
+        <p class="otp-resend">Kirim ulang OTP dalam <span id="countdown">300</span> detik</p>
+    </div>
+
+    <script>
+        // Countdown timer for OTP resend
+        let countdown = 300;
+        const countdownElement = document.getElementById('countdown');
+        const timer = setInterval(() => {
+            countdown -= 1;
+            countdownElement.textContent = countdown;
+            if (countdown <= 0) {
+                clearInterval(timer);
+                countdownElement.textContent = '0';
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
